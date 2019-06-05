@@ -1,8 +1,7 @@
 spring.application.name: inventory-service
-spring.cloud.refresh.enabled: true
 spring.cloud.config:
   uri:
-  - http://localhost:8888
+  - http://192.168.99.100:8888
 server.port: 9002
 debug: false
 management:
@@ -11,7 +10,7 @@ management:
       exposure:
         include: '*'
 eureka.client.service-url:
-  defaultZone: http://localhost:9000/eureka/
+  defaultZone: http://192.168.99.100:9000/eureka/
 spring.cloud:
   discovery:
     client:
